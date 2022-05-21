@@ -28,8 +28,7 @@ body {
   font-family: var(--primary-font);
   display: grid;
   place-items: center;
-  min-height: 100vh;
-  
+  min-height: 100vh;  
 }
 
 main {
@@ -42,8 +41,30 @@ main {
 
 }
 
-.ratings__container {
+.intro__heading {
+  color: var(--primary-color-first);
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
 
+.intro__message {
+  color: var(--neutral-color-first);
+  font-weight: var(--fw-500);
+}
+
+.ratings__container {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.ratings__container li {
+  font-weight: bold;
+  color: var(--primary-color-first);
+  font-size: var(--fs-body);
+  background-color: var(--neutral-color-second);
+  padding: 1rem
 }
 
 .testimonials__container {
