@@ -35,10 +35,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr ;
   place-items: center;
-  
+  gap: 5rem;
 }
 .intro__container {
-
+  max-width: 50%;
 }
 
 .intro__heading {
@@ -57,6 +57,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: .8rem;
+  max-width: 50%;
+
 }
 
 .ratings__container li {
@@ -86,6 +88,47 @@ main {
 
 .testimonials__container {
 grid-column: 1 / 3;
+display: flex;
+gap: 1rem;
+border-radius: 8px;
+color: var(--neutral-color-third);
+max-width: 50%;
+}
+
+.testimonials__container:nth-child(1) {
+  margin-top: 2rem;
+}
+
+.testimonials__container section {
+  background-color: var(--primary-color-first);
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 8px;
+}
+.profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 15px;
+}
+
+.profile img {
+  width: 15%;
+  border-radius: 100px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.profile-info p {
+  font-size: .9rem;
+}
+
+.profile-status {
+  color: var(--primary-color-second);
 }
 
 
