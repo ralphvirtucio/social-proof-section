@@ -39,6 +39,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  gap: 4rem;
 }
 
 .intro {
@@ -89,4 +90,51 @@ main {
 .ratings p {
   color: var(--primary-color-first);
   font-weight: var(--fw-700);
+}
+
+.testimonials {
+  grid-column: 1/3;
+  display: flex;
+  gap: 2rem;
+  max-width: 76%;
+  color: var(--neutral-color-third);
+}
+
+.testimonials__first,
+.testimonials__second,
+.testimonials__third {
+  background-color: var(--primary-color-first);
+  padding: 2rem;
+  border-radius: 8px;
+}
+.testimonials__first p,
+.testimonials__second p,
+.testimonials__third p {
+  line-height: 1.2;
+  font-size: var(--fs-body);
+}
+
+.testimonials__second {
+  transform: translateY(1rem);
+}
+.testimonials__third {
+  transform: translateY(2rem);
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile p {
+  color: var(--primary-color-second);
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+.profile img {
+  border-radius: 100px;
+  width: 8%;
 }
