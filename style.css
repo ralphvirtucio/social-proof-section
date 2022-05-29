@@ -128,8 +128,9 @@ main {
   margin-bottom: 2rem;
 }
 
-.profile h2 {
+.profile span {
   font-size: 1rem;
+  font-weight: var(--fw-700);
 }
 
 .profile p {
