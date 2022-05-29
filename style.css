@@ -128,6 +128,10 @@ main {
   margin-bottom: 2rem;
 }
 
+.profile h2 {
+  font-size: 1rem;
+}
+
 .profile p {
   color: var(--primary-color-second);
   font-weight: 500;
